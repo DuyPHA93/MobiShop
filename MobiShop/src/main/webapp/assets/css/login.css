@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+#loginFrm {
+	display: block;
+	margin: auto;
+	padding-top: 40px;
+	width: 100%;
+	min-height: 450px;
+	font-size: 13.5px;
+}
+
+#loginFrm .error {
+	font-size: 1.1em;
+	color: #b20000;
+}
+
+#loginFrm h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+
+#loginFrm .d-input label {
+	width: 100%;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#loginFrm .d-input input {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ddd;
+	outline: 0;
+	margin-top: 7px;
+}
+
+#loginFrm button {
+	outline: 0;
+	border: 2px solid #dc2d35;
+	background-color: #dc2d35;
+	color: #fff;
+	width: 100%;
+	padding: 5px 20px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 1em;
+	text-transform: uppercase;
+	transition: all .3s;
+}
+
+#loginFrm button:hover {
+	background-color: #c12028;
+}
+
+@media screen and (min-width: 576px) {
+	#loginFrm {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#loginFrm {
+		width: 40%;
+	}
+}

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+#table_wraper tbody img {
+	width: 60px;
+	max-width: 100%;
+	vertical-align: middle;
+}

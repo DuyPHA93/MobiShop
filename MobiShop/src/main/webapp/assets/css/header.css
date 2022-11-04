@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+.top-head {
+	position: relative;
+	padding: 10px 0;
+}
+
+#logo {
+	margin-right: 40px;
+}
+
+#logo img {
+	width: 150px;
+}
+
+#search-bar {
+	position: relative;
+}
+
+#search-bar input {
+	width: 100%;
+	outline: 0;
+	padding: 5px 20px;
+	border-radius: 20px;
+	border: 1px solid #d5d5d5;
+	font-size: .85rem;
+}
+
+#search-bar button {
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	border: none;
+	background-color: #fff;
+	color: #dc2d35;
+	font-size: 20px;
+}
+
+.box-link {
+	width: 100%;
+	text-align: center;
+}
+
+.box-link .cart-link {
+	white-space: nowrap;
+}
+
+.box-link .amount {
+	white-space: nowrap;
+}
+
+.box-link a, .box-link a:focus, .box-link a:hover {
+	font-size: 1rem;
+	color: #333;
+}
+
+.navigation-bar {
+	border-top: 1px solid #888;
+	background: #f4f4f4;
+}
+
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 20px;
+	text-transform: uppercase;
+}
+
+.navigation:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.navigation li {
+	float: left;
+}
+
+.navigation a {
+	display: block;
+	padding-left: 15px;
+	padding-right: 25px;
+	color: #333;
+	font-weight: 600;
+	color: #4b566b;
+	transition: all .2s;
+}
+
+.navigation a:hover {
+	color: #fe696a;
+}
+
+.bottom-head.hide {
+	display: none;
+}
+
+.bottom-head #banner {
+	position: relative;
+	margin-left: 220px;
+	padding-top: 300px;
+}
+
+.bottom-head img {
+	right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-position: 50% 50%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;';
+}
+
+@media screen and (max-width: 576px) {
+	.bottom-head #banner {
+		padding-top: 480px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.top-head {
+		height: 100px;
+	}
+	
+	#logo {
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		-ms-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%);
+	}
+	
+	.for-mobile #nav-button,
+	.for-mobile #search-button {
+		position: absolute;
+		top: 40%;
+		font-size: 1.3rem;
+		opacity: .6;
+	}
+	
+	.for-mobile #nav-button {
+		left: 10px;
+	}
+	
+	.for-mobile #search-button {
+		right: 10px;
+	}
+	
+	.bottom-head #banner {
+		position: relative;
+		margin-left: 0 !important;
+		padding-top: 300px;
+	}
+}

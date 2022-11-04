@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+.sort-choosen select {
+	outline: 0;
+	border: 1px solid #d5d5d5;
+	padding: 7px;
+	margin-left: 15px;
+}
+
+.paging {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; list-style-type : none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.paging .page {
+	margin-right: 6px;
+}
+
+.paging .page a {
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	line-height: 28px;
+	border-radius: 50%;
+	border: 2px solid #333;
+	color: #333;
+	font-size: .98rem;
+	font-weight: 600;
+	text-align: center;
+	transition: all .3s;
+}
+
+.paging .page.prev, .paging .page.next {
+	position: relative;
+}
+
+.paging .page .arrow {
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-ms-transform: translate(-40%, -50%);
+	transform: translate(-40%, -50%);
+}
+
+.paging .page.disable a,
+.paging .page.active a {
+	pointer-events: none;
+}
+
+.paging .page.active a, .paging .page a:hover {
+	border-color: #dc2d35;
+	background-color: #dc2d35;
+	color: #fff;
+}
+
+
+
+
+.product-category-side {
+	margin-bottom: 30px;
+	font-size: 14.5px;
+}
+
+.product-category-side h3 {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.product-category-side .menu,
+.product-category-side .menu .submenu {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px 0px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+
+.product-category-side .menu > li {
+	position: relative;
+}
+
+.product-category-side .menu .submenu {
+	display: none;
+	margin: 5px 0px;
+	font-size: .9em;
+}
+
+.product-category-side .menu li.open-submenu .submenu {
+	display: block;
+}
+
+.product-category-side .menu li.open-submenu .menu-badge {
+	transform: rotate(180deg);
+}
+
+.product-category-side .menu .menu-icon {
+	display: inline-block;
+	width: 30px;
+}
+
+.product-category-side .menu .menu-badge {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: .8em;
+	color: #bbb;
+	cursor: pointer;
+	padding: 3px 5px;;
+}
+
+.product-category-side .menu .menu-badge:hover {
+	color: #333;
+}
+
+.product-category-side .menu a {
+	display: block;
+	text-decoration: none;
+	padding: 6px 0px;
+	color: inherit;
+}
+
+.product-category-side .menu .submenu a {
+	padding: 2px 0px;
+}
+
+.product-category-side .menu a:hover {
+	color: #dc2d35;
+}
+
+.product-category-side .menu li {
+	padding: 0px 17px;
+}
+
+@media screen and (max-width: 992px) {
+	.page-title {
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	.sort-choosen {
+		text-align: center !important;
+	}
+	.sort-choosen span {
+		display: none;
+	}
+}

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.account-content {
+	font-size: 14px;
+}
+
+#my_order_table h3 {
+	text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#my_order_table table {
+	font-size: 1em;
+}
+
+#my_order_table table tbody {
+	vertical-align: middle;
+}
+
+#my_order_table table thead th {
+	text-transform: uppercase;
+}
+
+#my_order_table table thead th:nth-child(2),
+#my_order_table table thead th:nth-child(3),
+#my_order_table table thead th:nth-child(5) {
+	min-width: 100px;
+}
+
+#my_order_table table thead th:nth-child(4) {
+	min-width: 120px;
+}
+
+#my_order_table .sort-choosen select {
+	outline: 0;
+    border: 1px solid #d5d5d5;
+    padding: 7px;
+    margin-left: 15px;
+}
+
+#my_order_table .sort-choosen {
+	text-align: center;
+}
+
+#my_order_table h3, #my_order_table .sort-choosen span {
+	display: none;
+}
+
+#my_order_table .order-date {
+	margin-right: 7px;
+}
+
+#my_order_table .order-status {
+	font-size: 80%;
+}
+
+@media screen and (min-width: 770px) {
+	#my_order_table .sort-choosen {
+		text-align: right;
+	}
+	
+	#my_order_table h3, #my_order_table .sort-choosen span {
+		display: inline-block;
+	}
+}

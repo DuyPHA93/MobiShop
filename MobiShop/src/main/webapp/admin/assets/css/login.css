@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+	background: url("../images/login_admin.jpg");
+    background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	font-size: 14px;
+}
+
+.login-box {
+	background-color: #fff;
+	width: 30%;
+  	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	border-radius: 5px;
+  	padding: 30px;
+}
+
+.login-box label {
+	font-weight: 500;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 10px;
+	outline: 0;
+	border: 1px solid #cfd5db;
+	box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+}
+
+.form-group .login-button {
+	width: 100%;
+}
+
+input[type=checkbox] + label {
+	cursor: pointer;
+}
+
+#error {
+	font-size: 1.1em;
+    color: #b20000;
+}

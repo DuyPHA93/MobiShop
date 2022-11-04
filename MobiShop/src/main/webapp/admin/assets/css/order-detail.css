@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+#order-detail h2 {
+	display: inline-block;
+	font-weight: 600;
+	margin-right: 5px;
+}
+
+#order-detail table {
+	font-size: 1em;
+}
+
+#order-detail .info p {
+	margin-bottom: 3px;
+}
+
+#order-detail .info .table th, #order-detail .info .table td {
+	padding: 9px 15px;
+}
+
+#order-detail .table th {
+	font-weight: 500;
+}
+
+#products-table thead th {
+	text-transform: uppercase;
+}
+
+#products-table .price, #products-table .total, #products-table .total-amount,
+	#products-table tfoot th {
+	text-align: right;
+}
+
+#products-table img {
+	width: 60px;
+	vertical-align: middle;
+}
+
+#products-table .quantity {
+	width: 50px;
+}
+
+#products-table .code {
+	color: #777;
+	margin-top: 5px;
+}
+
+#products-table tfoot, #products-table tfoot th, #products-table tfoot td
+	{
+	vertical-align: text-top;
+	border-bottom: none;
+}
+
+#products-table .total-amount {
+	font-size: 19px;
+	font-weight: 400;
+	color: #1fae66;
+}
+
+#products-table .for-mobile {
+	display: none;
+	margin-top: 5px;
+}
+
+#order-detail .panel-right {
+	border-top: 3px solid #1fae66;
+	padding: 15px 20px;
+	line-height: 1.6em;
+}
+
+#order-detail .panel-right .caption {
+	font-size: 17px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+#order-detail .panel-right .customer-name {
+	text-decoration: none;
+	font-weight: 500;
+}
+
+#output-delivery>.row .row {
+	margin-bottom: 15px;
+}
+
+#order-detail .d-btn {
+	outline: 0;
+	padding: 7px 15px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+	border-radius: 3px;
+	transition: all .2s ease;
+}
+
+#order-detail .d-btn .icon {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#order-detail .d-blue-btn {
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #23709e;
+	background-color: #23709e;
+}
+
+#order-detail .d-blue-btn:hover {
+	background-color: #1e6189;
+    color: #FFF;
+}
+
+#order-detail .d-default-btn {
+	text-decoration: none;
+	color: #333;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+#order-detail .d-default-btn:hover {
+	color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+@media screen and (min-width: 770px) {
+	#output-delivery .col-left .row>div:nth-child(2) {
+		padding-right: 30px;
+	}
+	
+	#output-delivery .col-right .row>div:first-child {
+		padding-left: 30px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#products-table .quantity, #products-table .price {
+		display: none;
+	}
+	
+	#products-table tfoot{
+		display: none;
+	}
+	
+	#products-table .for-mobile {
+		display: block;
+	}
+}

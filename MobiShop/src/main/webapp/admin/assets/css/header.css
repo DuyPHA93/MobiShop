@@ -1,0 +1,203 @@
+.header {
+	position: relative;
+	background-color: #242729;
+	color: #fff;
+	padding: 10px 15px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.center-vertical {
+	display: flex;
+  	align-items: center;
+}
+
+.header .logo {
+	position: relative;
+}
+
+.header .logo a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 0 20px;
+	color: #1fae66;
+	font-family: fantasy;
+	margin-top: 15px;
+}
+
+.header .mb-menu-btn {
+	display: none;
+	background: rgba(0,0,0,0.6);
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 4px;
+    color: #BABABA;
+    margin-top: 0;
+    height: 30px;
+    line-height: 28px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .mb-menu-btn i {
+	line-height: 30px;
+}
+
+.header #search-bar {
+	position: relative;
+	margin-top: 5px;
+}
+
+.header #search-bar input {
+	border-radius: 20px;
+	outline: 0;
+	border: 1px solid #242729;
+	padding: 3px 30px 3px 10px;
+	color: #333;
+	width: 100%;
+}
+
+.header #search-bar button {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	width: 28px;
+	height: 28px;
+	font-size: .9rem;
+	border: none;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #1fae66;
+}
+
+.header .account-info {
+	cursor: pointer;
+	color: #ccc;
+}
+
+.header .account-info .avatar,
+.header .account-info .menu {
+	display: inline-block;
+}
+
+.header .account-info .menu {
+	margin-left: 10px;
+}
+
+.header .account-info .menu .icon {
+	margin-left: 5px;
+}
+
+.header .account-info .menu ul.hide {
+	display: none;
+}
+
+.header .account-info .menu ul {
+	position: absolute;
+	top: 100%;
+	right: 15px;
+	margin: 0;
+	padding: 0;
+	width: 170px;
+	text-align: left;
+	font-size: 1rem;
+	background-color: #fff;
+	border-top: 3px solid #1fae66;
+	transition: all .3s ease 0s;
+	z-index: 9999;
+}
+
+.header .account-info .menu .menu-icon {
+	display: inline-block;
+	width: 25px;
+}
+
+.header .account-info .menu ul a {
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #777;
+}
+
+.header .account-info .menu ul a:hover {
+	background-color: #f4f4f4;
+}
+
+.header .avatar img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+#search-bar {
+	display: inline-block;
+	width: 80%;
+}
+
+.account-info .menu ul {
+	list-style-type: none;
+}
+
+@media screen and (max-width: 770px) {
+	.head-part-1 {
+		padding: 7px 0;
+	}
+	
+	.head-part-2.container-right {
+		display: none;
+	}
+	
+	.container-left {
+		left: -260px;
+	}
+	
+	.container-right {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.head-part-1.container-left {
+		position: static;
+	}
+	
+	.head-part-2.container-right {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	
+	.head-part-1, .head-part-2 {
+		width: 100%;
+	}
+	
+	.head-part-1 .mb-menu-btn {
+		display: block;
+		position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		z-index: 999;
+	}
+	
+	.header .logo div {
+		text-align: center;
+	}
+	
+	#search-bar {
+		width: 100%;
+	}
+	
+	.header .logo a {
+		margin-top: 0;
+		padding: 0;
+	}
+}

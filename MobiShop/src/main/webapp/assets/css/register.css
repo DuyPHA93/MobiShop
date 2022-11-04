@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+#registerFrm {
+	display: block;
+	margin: auto;
+	padding-top: 40px;
+	width: 100%;
+	font-size: 13.5px;
+}
+
+#registerFrm .error {
+	font-size: 1.1em;
+	color: #b20000;
+}
+
+#registerFrm h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+
+#registerFrm .d-input label {
+	width: 100%;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#registerFrm .d-input input {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ddd;
+	outline: 0;
+	margin-top: 7px;
+}
+
+#registerFrm button {
+	outline: 0;
+	border: 2px solid #dc2d35;
+	background-color: #dc2d35;
+	color: #fff;
+	width: 100%;
+	padding: 5px 20px;
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 1em;
+	text-transform: uppercase;
+	transition: all .3s;
+}
+
+#registerFrm button:hover {
+	background-color: #c12028;
+}
+
+@media screen and (min-width: 576px) {
+	#registerFrm {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#registerFrm {
+		width: 40%;
+	}
+}
